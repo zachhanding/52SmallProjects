@@ -1,0 +1,44 @@
+
+<!DOCTYPE html> 
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>Single page template</title> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+	<script src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+</head> 
+
+<body> 
+
+<div data-role="page">
+
+	<div data-role="header">
+		<h1>Home</h1>
+	</div><!-- /header -->
+    
+    <nav data-role="navbar" class="ui-navbar" role="navigation">
+        <ul class="ui-grid-b">
+            <li class="ui-block-a"><a href="index.html" data-icon="home" data-ajax="false">Home</a></li>
+            <li class="ui-block-b"><a href="products.html" data-icon="grid" data-ajax="false">Products</a></li>
+            <li class="ui-block-c"><a href="about.html" data-icon="info" data-ajax="false">About Us</a></li>
+        </ul>
+    </nav>
+
+	<div data-role="content">	
+		<p>This right here is a jQuery Mobile test site.</p>
+        <img src="hero.png" style="width:100%"/>
+		<p>I'm using single-page templates, and linking to them with data-ajax="false". No fancy transitions are available, but this is just a demo.</p>
+		<p>This template is standard HTML document with a single "page" container inside, unlike a <a href="multipage-template.html" data-ajax="false">multi-page template</a> that has multiple pages within it. We strongly recommend building your site or app as a series of separate pages like this because it's cleaner, more lightweight and works better without JavaScript.</p>
+        <p>This has been a test of the Emergency Broadcast System.</p>
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-position="fixed">
+		<h4>Footer content</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+</body>
+</html>

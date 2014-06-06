@@ -1,0 +1,59 @@
+
+<!DOCTYPE html> 
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>Single page template</title> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+	<script src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+</head> 
+
+<body> 
+
+<div data-role="page">
+
+	<div data-role="header">
+		<h1>About Us</h1>
+	</div><!-- /header -->
+    
+    <nav data-role="navbar" class="ui-navbar" role="navigation">
+        <ul class="ui-grid-b">
+            <li class="ui-block-a"><a href="index.html" data-icon="home" data-ajax="false">Home</a></li>
+            <li class="ui-block-b"><a href="products.html" data-icon="grid" data-ajax="false">Products</a></li>
+            <li class="ui-block-c"><a href="about.html" data-icon="info" data-ajax="false">About Us</a></li>
+        </ul>
+    </nav>
+
+	<div data-role="content">	
+		<p>Our company is pretty sweet.  Actually, our company doesn't exist. I'm just doing this for practice. It doesn't mean anything. I'm just writing now to fill up space.</p>
+        <p>Yeah...I have nothing of importance to say.</p>
+        <p>If YOU have something of importance to say, by all means email us. Use the contact form below. It probably works.</p>
+        <p>(no it doesn't)</p>
+        
+        <form action="index.html" method="post" data-ajax="false">
+            <input type="text" placeholder="Full Name" />
+            <input type="range" placeholder="Age" min="0" max="99" />
+            <select>
+                <option>Select one</option>
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+            </select>
+            <select data-role="slider">
+                <option>No</option>
+                <option>Yes</option>
+            </select>
+            <input type="submit" value="Send Message" />
+        </form>
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-position="fixed">
+		<h4>Footer content</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+</body>
+</html>
