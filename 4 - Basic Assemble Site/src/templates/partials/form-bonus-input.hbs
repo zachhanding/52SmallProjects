@@ -1,0 +1,68 @@
+---
+component: form
+---
+
+<form class="form-horizontal" role="form">
+    <!-- Salary -->
+    <div class="form-group">
+        <label for="input-period-salary" class="col-sm-2 control-label">Period Salary:</label>
+        <div class="col-sm-10">
+            <input type="text" id="input-period-salary" class="form-control" />
+        </div>
+    </div>
+    
+    <!-- Title -->
+    <div class="form-group">
+        <label for="select-employee-title" class="col-sm-2 control-label">Employee Title:</label>
+        <div class="col-sm-10">
+            <select id="select-employee-title" class="form-control">
+                <option value="0.05">Consultant</option>
+                <option value="0.065">Sr. Consultant</option>
+                <option value="0.075">Lead</option>
+                <option value="0.075">Manager</option>
+                <option value="0.1">Sr. Manager</option>
+            </select>
+        </div>
+    </div>
+    
+    <!-- Hours -->
+    <div class="form-group">
+        <label for="input-billable-hours" class="col-sm-2 control-label">Billable Hours:</label>
+        <div class="col-sm-10">
+            <input type="text" id="input-billable-hours" class="form-control" />
+        </div>
+    </div>
+    
+    <!-- Delivery -->
+    <div class="form-group">
+        <label for="select-delivery-success" class="col-sm-2 control-label">Delivery Success:</label>
+        <div class="col-sm-10">
+            <select id="select-delivery-success" class="form-control">
+                <option>E</option>
+                <option>M+</option>
+                <option>M</option>
+                <option>M-</option>
+                <option>NI</option>
+            </select>
+        </div>
+    </div>
+    
+    <!-- Contributions -->
+    <div class="form-group">
+        <label for="select-internal-contributions" class="col-sm-2 control-label">Internal Contributions:</label>
+        <div class="col-sm-10">
+            <select id="select-internal-contributions" class="form-control">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+        </div>
+    </div>
+    
+    <!-- Submit -->
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default">Calculate</button>
+        </div>
+    </div>
+</form>

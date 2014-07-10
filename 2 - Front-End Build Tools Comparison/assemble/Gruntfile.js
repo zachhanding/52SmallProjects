@@ -141,12 +141,4 @@ module.exports = function(grunt) {
   grunt.registerTask('design', ['clean', 'assemble', 'less:site', 'watch:site']);
 
   grunt.registerTask('docs', ['readme', 'sync']);
-
-  // Delete this conditional logic after first run.
-  if(!grunt.file.exists('_gh_pages_/assets/fonts') && !grunt.file.exists('_gh_pages_/assets/js')) {
-    grunt.registerTask('default', ['setup', 'clean', 'jshint', 'copy:assets', 'assemble', 'less', 'docs']);
-  } else {
-    // Use this going forward.
-    grunt.registerTask('default', ['clean', 'jshint', 'copy:assets', 'assemble', 'less', 'docs']);
-  }
 };
