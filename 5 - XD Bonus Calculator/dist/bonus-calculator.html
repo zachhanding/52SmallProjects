@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bonus Calculator | XD Tools</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Bootstrap theme -->
+    <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/theme.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    
+    
+<!-- Fixed navbar -->
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">XD Tools</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <!-- you can exclude pages using {{#isnt}} helper: {{#isnt data.title 'Blog'}} -->
+        
+          
+            <li class="active">
+              <a href="bonus-calculator.html">Bonus Calculator</a>
+            </li>
+          
+        
+          
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>
+  
+    
+    <div class="container" role="main">
+
+      
+<div class="jumbotron">
+  <h1>XD Bonus Calculator</h1>
+  <p>If you're confused about the new bonus system in place for XD, buck up, Sally.  There's no need for that.  This here is the certified, guaranteed, officially licensed, one-of-a-kind, estimated and likely inaccurate calculator for all your bonus needs!</p>
+</div>
+
+
+
+<form class="form-horizontal" role="form">
+    <!-- Salary -->
+    <div class="form-group">
+        <label for="input-period-salary" class="col-sm-2 control-label">Period Salary:</label>
+        <div class="col-sm-10">
+            <input type="text" id="input-period-salary" class="form-control" />
+        </div>
+    </div>
+    
+    <!-- Title -->
+    <div class="form-group">
+        <label for="select-employee-title" class="col-sm-2 control-label">Employee Title:</label>
+        <div class="col-sm-10">
+            <select id="select-employee-title" class="form-control">
+                <option value="0.05">Consultant</option>
+                <option value="0.065">Sr. Consultant</option>
+                <option value="0.075">Lead</option>
+                <option value="0.075">Manager</option>
+                <option value="0.1">Sr. Manager</option>
+            </select>
+        </div>
+    </div>
+    
+    <!-- Hours -->
+    <div class="form-group">
+        <label for="input-billable-hours" class="col-sm-2 control-label">Billable Hours:</label>
+        <div class="col-sm-10">
+            <input type="text" id="input-billable-hours" class="form-control" />
+        </div>
+    </div>
+    
+    <!-- Delivery -->
+    <div class="form-group">
+        <label for="select-delivery-success" class="col-sm-2 control-label">Delivery Success:</label>
+        <div class="col-sm-10">
+            <select id="select-delivery-success" class="form-control">
+                <option>E</option>
+                <option>M+</option>
+                <option>M</option>
+                <option>M-</option>
+                <option>NI</option>
+            </select>
+        </div>
+    </div>
+    
+    <!-- Contributions -->
+    <div class="form-group">
+        <label for="select-internal-contributions" class="col-sm-2 control-label">Internal Contributions:</label>
+        <div class="col-sm-10">
+            <select id="select-internal-contributions" class="form-control">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+        </div>
+    </div>
+    
+    <!-- Submit -->
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default">Calculate</button>
+        </div>
+    </div>
+</form>
+
+
+
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <td></td>
+                <td colspan="2" class="info text-center">Potential</td>
+                <td colspan="3" class="text-center">Actual</td>
+            </tr>
+            <tr class="active">
+                <td>Performance Measures</td>
+                <td class="text-center">% Allocation</td>
+                <td class="text-right">Potential Bonus</td>
+                <td class="text-center">Score</td>
+                <td class="text-center">Factors (% of potential)</td>
+                <td class="text-right">Bonus Earned</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Billable Hours</td>
+                <td class="info text-center">50%</td>
+                <td class="info text-right">$812.50</td>
+                <td class="text-center">850 hrs</td>
+                <td class="text-center">87.5%</td>
+                <td class="text-right">$710.94</td>
+            </tr>
+            <tr>
+                <td>Delivery Success</td>
+                <td class="info text-center">20%</td>
+                <td class="info text-right">$325.00</td>
+                <td class="text-center">M+</td>
+                <td class="text-center">75%</td>
+                <td class="text-right">$243.75</td>
+            </tr>
+            <tr>
+                <td>Int Contributions</td>
+                <td class="info text-center">30%</td>
+                <td class="info text-right">$487.50</td>
+                <td class="text-center">1</td>
+                <td class="text-center">100%</td>
+                <td class="text-right">$487.50</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="info"></td>
+                <td class="info text-right">$1,625.00</td>
+                <td></td>
+                <td></td>
+                <td class="text-right">$1,442.19</td>
+            </tr>
+        </tbody>
+    </table>
+</div> 
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
