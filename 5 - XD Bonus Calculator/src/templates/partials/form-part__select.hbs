@@ -1,0 +1,14 @@
+---
+molecule: form select
+---
+
+<div class="form-group">
+    <label for="{{ id }}" class="col-sm-2 control-label">{{ label }}</label>
+    <div class="col-sm-10">
+        <select id="{{ id }}" class="form-control" name="{{ id }}">
+            {{#each options}}
+                <option value="{{ this.value }}">{{ this.title }}</option>
+            {{/each}}
+        </select>
+    </div>
+</div>

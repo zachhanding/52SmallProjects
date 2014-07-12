@@ -1,0 +1,63 @@
+--- 
+id: "bonus-input-form"
+classes: "form-horizontal"
+employeeTitleSelect: 
+  id: "select-employee-title"
+  label: "Employee Title:"
+  options: 
+    - 
+      title: Consultant
+      value: "0.05"
+    - 
+      title: "Sr. Consultant"
+      value: "0.065"
+    - 
+      title: Lead
+      value: "0.075"
+    - 
+      title: Manager
+      value: "0.075"
+    - 
+      title: "Sr. Manager"
+      value: "0.1"
+periodSalaryInput:
+    id: "input-period-salary"
+    label: "Period Salary:"
+billableHoursInput:
+    id: "input-billable-hours"
+    label: "Billable Hours:"
+deliverySuccessSelect: 
+  id: "select-delivery-success"
+  label: "Delivery Success:"
+  options: 
+    - 
+      title: E
+      value: 1
+    - 
+      title: M+
+      value: 0.75
+    - 
+      title: M
+      value: 0.075
+    - 
+      title: M-
+      value: 0
+    - 
+      title: NI
+      value: 0
+internalContributionsSelect: 
+  id: "select-internal-contributions"
+  label: "Internal Contributions:"
+  options: 
+    - 
+      title: 1
+      value: 1
+    - 
+      title: 2
+      value: 0.75
+    - 
+      title: 3
+      value: 0.5
+submit:
+    id: "calculate-form-submit"
+    label: "Calculate"
