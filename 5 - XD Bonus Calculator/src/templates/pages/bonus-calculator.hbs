@@ -1,16 +1,13 @@
 ---
 title: Bonus Calculator
 heading: 'XD Bonus Calculator'
+description: If you're confused about the new bonus system in place for XD, buck up, Sally.  There's no need for that.  This here is the certified, guaranteed, officially licensed, one-of-a-kind, estimated and likely inaccurate calculator for all your bonus needs!
+content: ./src/content/bonus-calculator.md
 ---
-<div class="jumbotron">
-  <h1>{{ heading }}</h1>
-  <p>If you're confused about the new bonus system in place for XD, buck up, Sally.  There's no need for that.  This here is the certified, guaranteed, officially licensed, one-of-a-kind, estimated and likely inaccurate calculator for all your bonus needs!</p>
-</div>
 
-<p>Go to the <a href="https://sharepoint.perficient.com/myperficient/hr/Pages/Consulting%20Colleague%20Bonus%20Plan.aspx">Consulting Colleague Bonus Plan</a> tool on My Perficient, select the appropriate date range and add together your eligible traveling and non-traveling hours to get your total hours. Then come back here, enter your period salary (yearly salary divided by 2) and the rest of the information, press Calculate and revel in your knowledge of what your bonus is going to be.</p>
-<p>Then of course, take only 66.7% of that and add in the 33.3% from your last bonus to get your actual bonus for this period.</p>
-<p>Then...of course take only 60% - 70% of that again to adjust for federal and state taxes.</p>
-<p>Now cry.</p>
+{{> jumbotron this }}
+
+{{md  content }}
 
 {{> form-bonus-input calculate-form }}
 
