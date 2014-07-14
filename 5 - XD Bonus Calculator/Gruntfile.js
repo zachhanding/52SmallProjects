@@ -29,7 +29,7 @@ module.exports = function(grunt) {
 
     watch: {
       assemble: {
-        files: ['<%= config.src %>/{content,data,templates}/{,*/}*.{md,hbs,yml}'],
+        files: ['<%= config.src %>/{content,data,templates}/{,**/}*.{md,hbs,yml}'],
         tasks: ['assemble']
       },
       livereload: {
@@ -69,7 +69,7 @@ module.exports = function(grunt) {
           assets: '<%= config.dist %>/assets',
           layout: '<%= config.src %>/templates/layouts/default.hbs',
           data: '<%= config.src %>/data/*.{json,yml}',
-          partials: '<%= config.src %>/templates/partials/{,*/}*.hbs' 
+          partials: '<%= config.src %>/templates/partials/{,**/}*.hbs' 
         },
         files: {
           '<%= config.dist %>/': ['<%= config.src %>/templates/pages/*.hbs']
