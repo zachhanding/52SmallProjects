@@ -22,7 +22,7 @@ employeeTitleSelect:
       value: "0.1"
 periodSalaryInput:
     id: "input-period-salary"
-    label: "Period Salary:"
+    label: "Period Celery:"
 billableHoursInput:
     id: "input-billable-hours"
     label: "Billable Hours:"
@@ -61,3 +61,6 @@ internalContributionsSelect:
 submit:
     id: "calculate-form-submit"
     label: "Calculate"
+test:
+    id: "test"
+    label: "Test:"

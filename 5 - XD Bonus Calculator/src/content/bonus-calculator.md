@@ -5,3 +5,5 @@ Then of course, take only 66.7% of that and add in the 33.3% from your last bonu
 Then...of course take only 60% - 70% of that again to adjust for federal and state taxes.
 
 Now cry.
+
+Blah blah blah

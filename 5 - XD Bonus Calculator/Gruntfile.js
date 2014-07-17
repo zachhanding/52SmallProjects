@@ -38,9 +38,9 @@ module.exports = function(grunt) {
         },
         files: [
           '<%= config.dist %>/{,*/}*.html',
-          '<%= config.dist %>/assets/{,*/}*.css',
-          '<%= config.dist %>/assets/{,*/}*.js',
-          '<%= config.dist %>/assets/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
+          '<%= config.dist %>/assets/{,**/}*.css',
+          '<%= config.dist %>/assets/{,**/}*.js',
+          '<%= config.dist %>/assets/{,**/}*.{png,jpg,jpeg,gif,webp,svg}'
         ]
       }
     },

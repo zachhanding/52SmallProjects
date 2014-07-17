@@ -4,7 +4,6 @@ organism: form
 
 <form id="{{ id }}" class="{{ classes }}" role="form">
     
-
     <!-- Title -->
     {{> form-part__select employeeTitleSelect }}
     
@@ -19,6 +18,8 @@ organism: form
     
     <!-- Contributions -->
     {{> form-part__select internalContributionsSelect }}
+    
+    {{> form-part__input test }}
     
     <!-- Submit -->
     {{> form-part__submit submit }}
